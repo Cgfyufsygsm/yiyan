@@ -10,8 +10,9 @@ module.exports = (req, res) => {
 
   // 返回多个字段，包括歌词、歌曲名、艺术家
   res.status(200).json({
-    lyric: randomLyric.lyric,
-    song: randomLyric.song,
-    artist: randomLyric.artist
+    content: randomLyric.content,
+    works: randomLyric.works,
+    author: randomLyric.author,
+    date: randomLyric.date
   });
 };
